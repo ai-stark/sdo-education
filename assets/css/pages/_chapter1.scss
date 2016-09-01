@@ -1,0 +1,157 @@
+.content{
+	max-width: 55em;
+	margin: 0px auto;
+	padding-left: .75em;
+	padding-right: .75em;
+}
+
+@include breakpoint($medium-2){
+	.content{
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+}
+
+/*
+.highlight{
+	width: 17em;
+	border-top: 3px solid $blue;
+	border-bottom: 3px solid $blue;
+	float: right;
+	padding: 1em 0em;
+	margin: 0em 0em 0em 1.3em;
+}
+*/
+
+.section-header h2{
+	margin-bottom: .25em;
+	margin-top: .75em;
+	font-size: 2.5em;
+
+}
+
+.section-number{
+	border: 1px solid $black;
+	border-radius: 3em;
+	display: block;
+	float: left;
+	font-size: .8em;
+	height: 2.25em;
+	width: 2.25em;
+	text-align: center;
+	padding: .35em .5em;
+	margin-right: .5em;
+	margin-top: -.25em;
+}
+
+.slide-wrap{
+	border: 1px solid black;
+		
+}
+
+.standards-slides-container{
+	height: 25em;
+	position: relative;
+}
+
+#slider-block{
+	background-color: rgb(245, 245, 245);
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+
+.slide-nav{
+	position: relative;
+	padding: .5em;
+	.btn-next{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: .5em;
+		margin: .5em .75em .5em 0;
+	}
+	.btn-previous{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: .5em;
+		margin: .5em 0 .5em .75em;
+	}
+}
+
+.btn-next:hover{
+	background-color: $blue;
+	border-color: $blue;
+	color: #FFF;
+}
+
+.btn-previous:hover{
+	background-color: $blue;
+	border-color: $blue;
+	color: #FFF;
+}
+
+.slide{
+	//background: url('/assets/img/gray-lighter-background.png');
+	width: 100%;
+	height: 25em;
+	background-color: $blue;
+	//padding: 1em;
+	position: absolute;
+	color: #fff;
+}
+
+.slide-title-block{
+	margin-right: -8px;
+	.chapter-head{
+		font-size: 3em;
+	}
+}
+
+.slider-frame{
+	padding: 1em;
+}
+
+.slide-hidden{
+	//display: none;
+	transition: opacity 1s;
+	opacity: 0;
+}
+
+.slide-visible{
+	display: inline-block;
+	transition: opacity 1s;
+	transition-delay: .5s;
+	opacity: 1;
+}
+
+.slide-location{
+	display: block;
+	margin: .25em auto;
+	max-width: 19em;
+	text-align: center;
+}
+
+.slide-location > li{
+	display: inline;
+	font-size: 1.125em;
+	line-height: 1.5em;
+	
+}
+
+.slide-location a{
+	border: 1px solid $gray;
+	border-radius: 1em;
+	color: $black;
+	display: inline-block;
+	line-height: 1;
+	padding: .4em .5em .5em;
+	width: 2em;
+	transition: all .3s;
+}
+
+.active-slide{
+	background-color: $yellow;
+}
+

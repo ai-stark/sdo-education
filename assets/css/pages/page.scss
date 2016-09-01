@@ -1,0 +1,39 @@
+.section ul{
+	margin: .25em 0 .75em 2.25em;
+}
+
+.section ul li{
+	list-style-type: disc;
+}
+
+.page-content{
+	position: relative;
+	margin-top: 3em;
+}
+
+@include breakpoint($large){
+	.page-content{
+		margin-top: 0em;
+	}
+}
+
+
+	.overlay.on {
+	    background-color: #fff;
+	    background-color: rgba(255,255,255,0.7);
+	    bottom: 0;
+	    height: 100%;
+	    left: 20.5em;
+	    position: fixed;
+	    right: 0;
+	    top: 3em;
+	    width: 100%;
+	}
+
+
+.overlay{
+	left: -18em;
+	transition: left .15s ease;
+	width: 0;
+	z-index: 17;
+}

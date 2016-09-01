@@ -1,0 +1,64 @@
+.social{
+	position: absolute;
+	background-color: rgba(50, 50, 50, .8);
+	padding: .5em;
+	right: 1em;
+	top: 0;
+	z-index: 20;
+	border-top: 0;
+}
+
+.social-btn{
+	border: 2px solid transparent;
+	border-radius: .875em;
+	display: inline-block;
+	height: 1.75em;
+	width: 1.75em;
+}
+
+.facebook-btn{
+	background-image: url("/assets/img/social/icon-facebook.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.linked-in-btn{
+	background-image: url("/assets/img/social/icon-linkedin.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.twitter-btn{
+	background-image: url("/assets/img/social/icon-twitter.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+
+.print-btn{
+	background-image: url("/assets/img/icon-print.png");
+	background-repeat: no-repeat;
+	border: 2px solid transparent;
+	font-family: "sofia-pro",sans-serif;
+	border-radius: .25em;
+	padding-left: 1.75em;
+	padding-right: .25em;
+	text-decoration: none;
+	position: relative;
+	top: -0.5em;
+}
+
+.print-btn:hover{
+	border: 2px solid #FFFFFF;
+}
+
+.social-btn:hover{
+	border: 2px solid #FFFFFF;
+}
+
+.social a{
+	color: white;
+}

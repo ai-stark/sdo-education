@@ -1,0 +1,28 @@
+{% assign current = page.title %}
+
+<div class="content">
+	<div class="row">
+		<div class="grid-12">
+			<div class="next">
+				<p class="text-center">
+					{% case current %}
+					{% when "Introduction" %}
+						<a class="btn btn-chapter" href="{{site.baseurl}}/chapter-1">Go to Chapter 1 <span aria-hidden="true">&rarr;</span></a>
+					{% when "Chapter 1" %}
+						<a class="btn btn-chapter" href="{{site.baseurl}}/chapter-2">Go to Chapter 2 <span aria-hidden="true">&rarr;</span></a>
+					{% when "Chapter 2" %}
+						<a class="btn btn-chapter" href="{{site.baseurl}}/chapter-3">Go to Chapter 3 <span aria-hidden="true">&rarr;</span></a>
+					{% when "Chapter 3" %}
+						<a class="btn btn-chapter" href="{{site.baseurl}}/chapter-4">Go to Chapter 4 <span aria-hidden="true">&rarr;</span></a>
+					{% when "Chapter 4" %}
+						<a class="btn btn-chapter" href="{{site.baseurl}}/references">Go to References <span aria-hidden="true">&rarr;</span></a>
+					{% else %}
+						
+					{% endcase %}
+				</p>
+			</div>
+			{% include join_conversation.html %}
+		</div>
+	</div>
+</div>
+

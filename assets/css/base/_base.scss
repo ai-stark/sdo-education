@@ -1,0 +1,83 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body{
+	font-size: 110%;
+	font-family: raleway, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ 	font-family: "raleway",sans-serif;
+ 	font-weight: 400;
+}
+
+h1{
+	font-size: 2.125em;
+	line-height: 1.2;
+	margin-bottom: .25em;
+}
+
+
+h2{ 
+	font-size: 1.75em;
+	line-height: 1.4
+ }
+
+h3{ font-size: 1.35em; }
+h4{ font-size: 1.3em; }
+h5{ font-size: 1.25em; }
+h6{ font-size: 1.125em; }
+
+img{
+	border: 0;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+button{
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+form::after{
+	content: "";
+	display:block;
+	clear:both;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+li{
+	list-style-type: none;
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+
+a{
+	text-decoration: none;
+	color: $blue;
+}
+
+//a:visited{ color: $purple; }
+
+p{
+	font-size: 1.125em;
+	line-height: 1.5em;
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+
+.text-center{
+	text-align: center;
+}
+/*
+h1, h2, h3, h4, h5, h6 {
+	font-family: "museo-slab",serif;
+}
+*/

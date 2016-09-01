@@ -1,0 +1,39 @@
+---
+layout: page
+url: /share-your-feedback
+title: Share your feedback
+slug: share_feedback
+navigation_weight: 7
+---
+
+{% include billboard_title_only.html %}
+
+<div class="content">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, voluptatem laudantium, animi vitae fugiat, magni veniam nobis, repellendus architecto reiciendis accusantium atque. A aliquid, doloribus quo totam temporibus, architecto cum.</p>
+
+
+	<form action="https://formspree.io/your@email.com" method="POST">
+	    <input type="hidden" name="_next" value="{{site.baseurl}}/thank-you">
+	    <input type="hidden" name="_subject" value="Registrar Playbook Feedback">
+	    <input type="hidden" value="_cc" value="">
+	    <p>
+	    	<label for="name">Name:</label>
+	    	<br>
+	    	<input type="text" id="name" name="name">
+	    </p>
+	    <p>	
+	    	<label for="email">Email:</label>
+	    	<br>
+	    	<input type="email" id="email" name="email" >
+	    </p>
+
+	    <p>
+	    	<label for="comment">Comment:</label>
+	    	<br>
+	    	<textarea name="comment" id="comment" cols="90" rows="6" spellcheck="true"></textarea>
+	    </p>
+	</form>
+
+</div>
+
+{% include upper-footer.html %}

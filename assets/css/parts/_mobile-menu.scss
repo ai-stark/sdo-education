@@ -1,0 +1,40 @@
+@include breakpoint($large){
+	.mobile-menu {
+    	display: none;
+	}
+}
+
+.mobile-menu {
+    background-color: #fff;
+    box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
+    height: 3em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 30;
+    .site-name {
+    	margin-left: .5em;
+    	margin-top: .15em;
+		img {
+    		max-height: 2.75em;
+		}
+	}
+	.site-menu{
+		position: absolute;
+		right: .5em;
+		top: .35em;
+	}
+}
+
+.btn-touch{
+	background-color: #FFF;
+	border-color: $blue;
+	color: $blue;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding: .4em .75em;
+	vertical-align: middle;
+
+}
+

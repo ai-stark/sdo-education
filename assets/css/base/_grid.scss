@@ -1,0 +1,126 @@
+/*-- setting border box on all elements inside the grid --*/
+.gridsys-container *{
+    box-sizing: border-box; 
+}
+
+.gridsys-container{
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;      
+}
+
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.row:after{
+    margin-bottom: 10px;
+}
+
+[class*='grid-'] {
+    float: left; 
+    min-height: 1px; 
+    width: 16.66%; 
+    /*-- our gutter -- */
+    padding: 8px; 
+    //background-color: #FFDCDC;
+    //outline: 1px solid #F6A1A1;
+    position: relative;
+}
+
+
+
+
+
+.grid-1{ width: 8.33%; }
+.grid-2{ width: 16.66%; }
+.grid-3{ width: 25%; }
+.grid-4{ width: 33.33%; }
+.grid-5{ width: 41.66%; }
+.grid-6{ width: 50%; }
+.grid-7{ width: 58.33%; }
+.grid-8{ width: 66.66%; }
+.grid-9{ width: 75%; }
+.grid-10{ width: 83.33%; }
+.grid-11{ width: 91.66%; }
+.grid-12{ width: 100%; }
+
+.offset-1{ margin-left: 8.33%; }
+.offset-2{ margin-left: 16.66%; }
+.offset-3{ margin-left: 25%; }
+
+.push-3{ left: 25%; }
+.push-6{ left: 50%; }
+
+.pull-9{ right: 75%; }
+.pull-6{ right: 50%; }
+
+
+/*-- some extra column content styling --*/
+[class*='grid-'] > p {
+ //background-color: #FFC2C2; 
+ //padding: 0;
+ //margin: 0;
+ //text-align: center; 
+ //color: white;
+
+}
+
+/*
+@media all and (max-width:800px){
+    .grid-1{ width: 8.33%; }
+    .grid-2{ width: 16.66%; }
+    .grid-3{ width: 25%; }
+    .grid-4{ width: 33.33%; }
+    .grid-5{ width: 41.66%; }
+    .grid-6{ width: 50%; }
+    .grid-7{ width: 58.33%; }
+    .grid-8{ width: 66.66%; }
+    .grid-9{ width: 75%; }
+    .grid-10{ width: 83.33%; }
+    .grid-11{ width: 91.66%; }
+    .grid-12{ width: 100%; }
+
+    .row .col-2:last-of-type{
+        width: 100%; 
+    }
+
+    .row .col-5 ~ .col-1{
+        width: 100%; 
+    }
+}
+
+@media all and (max-width:650px){
+
+    .row:after{
+        margin-bottom: 0px;
+    }
+
+    .grid-1  { width: 100%; }
+    .grid-2  { width: 100%; }
+    .grid-3  { width: 100%; }
+    .grid-4  { width: 100%; }
+    .grid-5  { width: 100%; }
+    .grid-6  { width: 100%; }
+    .grid-7  { width: 100%; }
+    .grid-8  { width: 100%; }
+    .grid-9  { width: 100%; }
+    .grid-10 { width: 100%; }
+    .grid-11 { width: 100%; }
+    .grid-12 { width: 100%; }
+
+    .offset-1 { margin-left: 0%; }
+    .offset-2 { margin-left: 0%; }
+    .offset-3 { margin-left: 0%; }
+
+    .push-3{ left: 0%; }
+    .push-6{ left: 0%; }
+
+    .pull-9{ right: 0%; }
+    .pull-6{ right: 0%; }
+}
+*/

@@ -1,0 +1,102 @@
+/*==============
+	COLORS
+===============*/
+$black: #323232;
+
+$off-white: #f0f6f9;
+
+$gray-dark: #737373;
+$gray: #b2ada7;
+$gray-lighter: #e4e4e5;
+$gray-lightest: #f5f5f5;
+
+$green-dark: #337b64;
+$green: #61dab3;
+$green-light: #9fe9d1;
+$green-lightest: #c8f3e5;
+
+$blue-darker: #001d5f;
+$blue-dark: #004b82;
+$blue: #1479bd;
+$blue-light: #1688d4;
+
+$yellow: #fecf00;
+$yellow-light: #fddc47;
+$purple: #77008d;
+
+
+/*==============
+  BREAKPOINTS
+===============*/
+$small:		24em;
+$small-2:	29.75em;
+$small-3:	39.8em;
+$medium:	46.8em;
+$medium-2:	48.125em;
+$medium-3:	50em;
+$large:		60em;
+$large-2:	66em;
+$large-3:	73em;
+$xlarge:	89em;
+$xxlarge:	93em;
+
+
+
+@mixin breakpoint($point){
+	@if $point == $small{
+		@media (min-width: 24em){
+			@content;
+		}
+	}
+	@else if $point == $small-2{
+		@media (min-width: 29.75em){
+			@content;
+		}
+	}
+	@else if $point == $small-3{
+		@media (min-width: 39.8em){
+			@content;
+		}
+	}
+	@else if $point == $medium{
+		@media (min-width: 46.8em){
+			@content;
+		}
+	}
+	@else if $point == $medium-2{
+		@media (min-width: 48.125em){
+			@content;
+		}
+	}
+	@else if $point == $medium-3{
+		@media (min-width: 50em){
+			@content;
+		}
+	}
+	@else if $point == $large{
+		@media (min-width: 60em){
+			@content;
+		}
+	}
+	@else if $point == $large-2{
+		@media (min-width: 66em){
+			@content;
+		}
+	}
+	@else if $point == $large-3{
+		@media (min-width: 73em){
+			@content;
+		}
+	}
+	@else if $point == $xlarge{
+		@media (min-width: 89em){
+			@content;
+		}
+	}
+	@else if $point == $xxlarge{
+		@media (min-width: 93em){
+			@content;
+		}
+	}
+}
+
