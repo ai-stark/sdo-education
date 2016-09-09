@@ -11,31 +11,39 @@ navigation_weight: 7
 {% include billboard_title_only.html %}
 
 <div class="content">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, voluptatem laudantium, animi vitae fugiat, magni veniam nobis, repellendus architecto reiciendis accusantium atque. A aliquid, doloribus quo totam temporibus, architecto cum.</p>
+	<div class="row">
+		<div class="grid-12">
+			<p>Have suggestions for making the Playbook better? Want to share a patient portal tip or trick that’s worked in your office? Tell us!</p>
 
 
-	<form action="https://formspree.io/your@email.com" method="POST">
-	    <input type="hidden" name="_next" value="{{site.baseurl}}/thank-you">
-	    <input type="hidden" name="_subject" value="Registrar Playbook Feedback">
-	    <input type="hidden" value="_cc" value="">
-	    <p>
-	    	<label for="name">Name:</label>
-	    	<br>
-	    	<input type="text" id="name" name="name">
-	    </p>
-	    <p>	
-	    	<label for="email">Email:</label>
-	    	<br>
-	    	<input type="email" id="email" name="email" >
-	    </p>
+			<form class="feedback-form" action="https://formspree.io/your@email.com" method="POST">
+				<!-- location of custome thank you for submitting page -->
+			    <input type="hidden" name="_next" value="{{site.baseurl}}/thank-you">
+			    <!-- adds subject to the email -->
+			    <input type="hidden" name="_subject" value="Registrar Playbook Feedback">
+			    <!-- add emails to cc these requests -->
+			    <input type="hidden" value="_cc" value="">
+			    <!-- used to fool scrapers and avoid spam -->
+			    <input type="text" name="_gotcha" style="display:none" />
+			    <p>
+			    	<label for="name">Name:</label>
+			    	<br>
+			    	<input type="text" id="name" name="name">
+			    </p>
+			    <p>	
+			    	<label for="email">Email:</label>
+			    	<br>
+			    	<input type="email" id="email" name="email" >
+			    </p>
 
-	    <p>
-	    	<label for="comment">Comment:</label>
-	    	<br>
-	    	<textarea name="comment" id="comment" cols="90" rows="6" spellcheck="true"></textarea>
-	    </p>
-	</form>
-
+			    <p>
+			    	<label for="comment">Comment:</label>
+			    	<br>
+			    	<textarea name="comment" id="comment" rows="6" spellcheck="true"></textarea>
+			    </p>
+			</form>
+		</div>
+	</div>
 </div>
 
 {% include upper-footer.html %}

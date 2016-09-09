@@ -8,11 +8,11 @@ billboardClass: chapter2-billboard
 
 subnav:
 - section-num: 2.1 
-  section-title: This is the title for Section 2.1
+  section-title: What are Standards Development Organizations (SDOs)?
 - section-num: 2.2 
-  section-title: This is the title for Section 2.2
+  section-title: Who is involved in SDOs
 - section-num: 2.3 
-  section-title: This is the title for Section 2.3
+  section-title: How do SDOs work?
 
 navigation_weight: 3
 ---
@@ -22,7 +22,7 @@ navigation_weight: 3
 
 {% include billboard_both.html %}
 
-
+<!--
 <div class="section">
 	<div class="content">
 		<div class="row">
@@ -36,13 +36,14 @@ navigation_weight: 3
 		</div>
 	</div>
 </div>
+-->
 
 
 <div class="section-header" id="section2.1" name="section2.1">
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<h2><span class="section-number">2.1</span>This is the title for Section 2.1</h2>
+				<h2><span class="section-number">2.1</span>{{ page.subnav[0].section-title }}</h2>
 			</div>
 		</div>
 	</div>
@@ -52,15 +53,7 @@ navigation_weight: 3
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eum unde nisi nam tempore a id sequi modi atque aliquid minus alias nihil, vel ipsa ipsam facilis maxime ab reprehenderit. Reiciendis, voluptas. Maxime debitis et natus iste, quae ullam asperiores alias, blanditiis nihil eligendi repellendus obcaecati incidunt consequuntur, animi itaque earum! Natus corporis ipsa fugiat placeat, harum reprehenderit ex itaque.</p>
-				<ul>
-					<li>Lorem ipsum dolor sit amet,</li>
-					<li>Eos quasi et odio magni hic,</li>
-					<li>Architecto quasi adipisci eligendi itaque fugit optio sed</li>
-					<li>Lorem ipsum dolor sit amet,</li>
-					<li>Eos quasi et odio magni hic,</li>
-					<li>Architecto quasi adipisci eligendi itaque fugit optio sed</li>
-				</ul>
+				<p>SDOs are organizations who work collaboratively with industry stakeholders such as health care providers, insurers, health IT software developers, patients, care givers, and others to develop and maintain standards to meet industry needs. Many SDOs are international organizations with U.S. branches, and there are at least 40 SDOs who currently develop and maintain standards for the healthcare field. A single SDO may only develop one standard, or they may have hundreds of standards, depending on the mission or interests of the organization.</p>
 			</div>
 		</div>
 	</div>
@@ -71,7 +64,7 @@ navigation_weight: 3
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<h2><span class="section-number">2.2</span>This is the title for Section 2.2</h2>
+				<h2><span class="section-number">2.2</span>{{ page.subnav[1].section-title }}</h2>
 			</div>
 		</div>
 	</div>
@@ -82,9 +75,7 @@ navigation_weight: 3
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eum unde nisi nam tempore a id sequi modi atque aliquid minus alias nihil, vel ipsa ipsam facilis maxime ab reprehenderit. Reiciendis, voluptas. Maxime debitis et natus iste, quae ullam asperiores alias, blanditiis nihil eligendi repellendus obcaecati incidunt consequuntur, animi itaque earum! Natus corporis ipsa fugiat placeat, harum reprehenderit ex itaque.</p>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eum unde nisi nam tempore a id sequi modi atque aliquid minus alias nihil, vel ipsa ipsam facilis maxime ab reprehenderit. Reiciendis, voluptas. Maxime debitis et natus iste, quae ullam asperiores alias, blanditiis nihil eligendi repellendus obcaecati incidunt consequuntur, animi itaque earum! Natus corporis ipsa fugiat placeat, harum reprehenderit ex itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eum unde nisi nam tempore a id sequi modi atque aliquid minus alias nihil, vel ipsa ipsam facilis maxime ab reprehenderit. Reiciendis, voluptas. Maxime debitis et natus iste, quae ullam asperiores alias, blanditiis nihil eligendi repellendus obcaecati incidunt consequuntur, animi itaque earum! Natus corporis ipsa fugiat placeat, harum reprehenderit ex itaque.</p>
+				<p>Many of the largest SDOs have a set of paid staff members who manage the administrative aspects of the SDOs, like finances, scheduling, organization of workgroups, etc. But for the most part, the individuals who participate in the SDOs and who actually build the standards are volunteers who participate in SDO activities in their free time.  Building good standards requires a wide range of knowledge and skills, so that standards meet business/clinical needs and work well from a technology perspective. Workgroup members, include but are not limited to: clinicians and healthcare administrators who understand the business need, clinical informaticists who understand clinical ideas and technology, software developers, engineers, IT professionals who understand technology, and government agencies who understand regulatory requirements.</p>
 			</div>
 		</div>
 	</div>
@@ -94,7 +85,7 @@ navigation_weight: 3
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<h2><span class="section-number">2.3</span>This is the title for Section 2.3</h2>
+				<h2><span class="section-number">2.3</span>{{ page.subnav[2].section-title }}</h2>
 			</div>
 		</div>
 	</div>
@@ -105,13 +96,42 @@ navigation_weight: 3
 	<div class="content">
 		<div class="row">
 			<div class="grid-12">
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor enim totam, fugiat minima amet ad tempore? Laboriosam nisi voluptatum magni fugiat laudantium at, ea nulla. Sequi explicabo repellat, optio!</p>
+				
+				<p>The majority of SDOs have detailed internal processes on how standards are developed and maintained, most often through the use of workgroups. Workgroups typically focus on a single standard or piece of a standard, or a single business need. SDOs use workgroups to pull together the right mix of individuals who have enough knowledge to develop and maintain a particular standard. Though each SDO has a slightly different process for developing new standards, generally they follow the workflow process below. Note that developing a new standard may take years in order to move through the balloting and piloting process. In particular, piloting a standard for a length of time is important to make sure the final standard works well in the real-world.</p>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, dolore, molestiae. Modi dolore, eius tempore similique ad, ea! Minima laudantium voluptatibus tempore, minus. Molestiae, id. Voluptatum quod, iusto dolores sed. Perferendis esse illo, iste perspiciatis praesentium cum itaque voluptatum laborum, tenetur quod ab dolor rem veniam. Laudantium illum vero aut temporibus corporis ratione laborum numquam, soluta totam, voluptatem laboriosam nostrum? Asperiores voluptatibus aperiam quae sit aliquam voluptates accusamus est beatae eligendi esse accusantium quos praesentium illo officiis, impedit molestias veniam quas vel, non, aliquid perferendis totam tempora ad id! Quo.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, dolore, molestiae. Modi dolore, eius tempore similique ad, ea! Minima laudantium voluptatibus tempore, minus. Molestiae, id. Voluptatum quod, iusto dolores sed. Perferendis esse illo, iste perspiciatis praesentium cum itaque voluptatum laborum, tenetur quod ab dolor rem veniam. Laudantium illum vero aut temporibus corporis ratione laborum numquam, soluta totam, voluptatem laboriosam nostrum? Asperiores voluptatibus aperiam quae sit aliquam voluptates accusamus est beatae eligendi esse accusantium quos praesentium illo officiis, impedit molestias veniam quas vel, non, aliquid perferendis totam tempora ad id! Quo.</p>
-				</div>
+<div class="section highlight">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<p><img src="/assets/img/sdo_workflow_review.jpg" alt=""></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="section">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+
+				<p>Once new standards are developed, SDOs must maintain them over time, fixing issues and adding new capabilities as the use case changes. While the maintenance process is similar to the development process, there is some variation. Again, each SDO has a slightly different process, but generally follows the process below. Note that this process may take months or more than a year to complete, depending on the priority level of the fix. Critical issues will be addressed more quickly, while enhancement requests may take more than a year to address.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section highlight">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<p><img src="/assets/img/sdo_workflow_maintenance.jpg" alt=""></p>
 			</div>
 		</div>
 	</div>

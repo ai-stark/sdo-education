@@ -67,7 +67,7 @@
 	height: 100vh;
 	position: fixed;
 	background-color: #FFFFFF;
-	box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
+	//box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
 	z-index: 30;
 	left: 0;
 	transition: left .15s ease;
@@ -102,10 +102,17 @@
 	transition: left .15s ease;
 }
 
+.sidebar{
+	box-shadow: 0 0 0 0;
+}
+
 @include breakpoint($large){
 	.sidebar.closed{
 		display: block;
 		left: 0;
+	}
+	.sidebar{
+		box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
 	}
 }
 

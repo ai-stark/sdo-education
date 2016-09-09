@@ -74,6 +74,7 @@ function cycleSlider(){
 	loc.children().addClass('active-slide');
 	slides.addClass('slide-hidden');
 	current.addClass('slide-visible');
+	current.attr('aria-hidden', "false");
 	if (index == 0){
 		$('.btn-previous').css('display', 'none');
 	}else{
@@ -90,7 +91,9 @@ function cycleSlider(){
 
 function clearActiveSlide(index){
 	slides.eq(index).removeClass('slide-visible');
+	slides.eq(index).attr('aria-hidden', 'true')
 	slideLoc.eq(index).children().removeClass('active-slide');
+
 }
 
 

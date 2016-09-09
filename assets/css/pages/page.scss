@@ -35,5 +35,9 @@
 	left: -18em;
 	transition: left .15s ease;
 	width: 0;
-	z-index: 17;
+	z-index: 22;
+}
+
+.highlight{
+	background-color: $gray-lightest;
 }
