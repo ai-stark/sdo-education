@@ -139,6 +139,3 @@ $('.slide-location a').click(function(event){
 });
 
 
-
-
-
