@@ -34,7 +34,7 @@ navigation_weight: 2
 
 
 
-
+<!--
 
 <div class="section-header highlight" id="slider-block">
 	<div class="content">
@@ -71,7 +71,59 @@ navigation_weight: 2
 			
 			<div class="slide-nav" >
 				<ul class="slide-location">
-					<!--<li><a href="" data-slide='1'>1</a></li>-->
+					
+					<li><a href="" data-slide='1'>1</a></li>
+					<li><a href="" data-slide='2'>2</a></li>
+					<li><a href="" data-slide='3'>3</a></li>
+				</ul>
+
+				<a class="btn btn-previous" href="{{site.baseurl}}/chapter-1"><span aria-hidden="true">&larr;</span> Previous</a>
+				<a class="btn btn-next" href="{{site.baseurl}}/chapter-1">Next <span aria-hidden="true">&rarr;</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+-->
+
+
+
+
+<div class="section-header" id-"slider-block">
+	<div class="content">
+		<div class="slide-wrap">
+			<div class="standards-slides-container">
+
+				<div class="slide" id="slide2" aria-hidden="false">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.base_url}}/assets/img/vocabicon.png" alt=""></span>
+							<p><b>Vocabulary/Terminology standards: </b>Vocabulary standards are all about how individual data elements are structured, recorded, and transmitted.  For example, when a provider adds a problem to a patient’s chart in your EHR system, the system will automatically link that problem to either an ICD-10 code or a SNOMED-CT code. Likewise, when a provider orders a medication for a patient, the system will automatically link the medication to an RxNorm code that will be electronically transmitted to the pharmacy, so that they fill the prescription with the right medication. Note that vendors have done this by mapping codes on the back-end of the system.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" id="slide3" aria-hidden="true">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.base_url}}/assets/img/formaticon.png" alt=""></span>
+							<p><b>Format standards: </b>Rarely is a single clinical data element for a patient shared electronically with another system, meaning, that typically a summary of clinical information (including medications, problems, allergies, lab results, etc.) is shared, rather than just one element like medication. When a health IT system receives this summary information, it has to be able to interpret it, which requires knowing what data will be in what locations, and what vocabulary the data will use. This is done via format standards, like the C-CDA (a standard summary of care document used for transitions of care) that layout for a developer where data is at in the document and the vocabulary for each data element.</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="slide" id="slide4" aria-hidden="true">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.base_url}}/assets/img/transporticon.png" alt=""></span>
+							<p><b>Transport standards: </b>Transport standards are how the data gets from point A to point B. We use transport standards every day in the non-clinical world when we send emails. Prior to the adoption of SMTP standards, individuals with a Yahoo email address could not share emails with someone with a Hotmail address. Transport standards allow for the secure exchange of data across the internet, but each product has to follow the same transport standard or exchange will not occur. While some transport standards, like Direct are very basic and similar to email, other transport standards allow for more complex data connectivity to share a broader set of data, or APIs, like, FHIR that will allow users to query for a single data element.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide-nav" >
+				<ul class="slide-location">
 					<li><a href="" data-slide='1'>1</a></li>
 					<li><a href="" data-slide='2'>2</a></li>
 					<li><a href="" data-slide='3'>3</a></li>
