@@ -19,7 +19,7 @@
 			<ul class="subnav {% if p.url == page.url %}subnav-expanded{% endif %}" aria-hidden="true">
 				{% for sub in p.subnav %}
 					<li>
-						<a href="{{site.baseurl}}{{p.slug}}/#section{{sub.section-num}}">{{sub.section-num}} {{sub.section-title}}</a>
+						<a href="#section{{sub.section-num}}">{{sub.section-num}} {{sub.section-title}}</a>
 					</li>
 				{% endfor %}
 			</ul>
