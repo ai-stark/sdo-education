@@ -100,3 +100,33 @@
 .btn-feedback{
 	padding: .4em .75em;
 }
+
+.lower-footer{
+	border-bottom: 2px solid $off-white;
+	border-top: 2px solid $off-white;
+	padding-top: .25em;
+	margin-top: 4em;
+	.grid-9{
+		padding: 0;
+		padding-right: 1em;
+	}
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.sharing-footer .social{
+	background-color: #fff;
+	.print-btn{
+		background-image: url('../../assets/img/icon-print-black.png');
+		color: black;
+		&:hover{
+			border: 2px solid $black;
+		}
+	}
+	.social-btn:hover{
+		border: 2px solid $black;
+	}
+}
