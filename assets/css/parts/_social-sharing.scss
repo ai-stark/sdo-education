@@ -17,21 +17,21 @@
 }
 
 .facebook-btn{
-	background-image: url("/assets/img/social/icon-facebook.png");
+	background-image: url("{{site.github.url}}/assets/img/social/icon-facebook.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
 }
 
 .linked-in-btn{
-	background-image: url("/assets/img/social/icon-linkedin.png");
+	background-image: url("/sdo_education/assets/img/social/icon-linkedin.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
 }
 
 .twitter-btn{
-	background-image: url("/assets/img/social/icon-twitter.png");
+	background-image: url("/sdo_education/assets/img/social/icon-twitter.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
