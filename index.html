@@ -1,7 +1,167 @@
 ---
-layout: landing_page
-url: /
-title: Landing Page
+layout: page
+url: chapter-1
+title: Chapter 1
+slug: chapter-1
+subtitle: What are health IT standards?
+billboardClass: chapter1-billboard
+
+subnav:
+- section-num: 1.1 
+  section-title: What can't standards do?
+
+
+navigation_weight: 2
 ---
 
-<h1>This is the Landing Page</h1>
+
+{% include social-links.html %}
+
+{% include billboard_both.html %}
+
+
+<div class="section-header">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<p>Standards are intended to enable products to more easily communicate with each other and share information, even when products are developed by different companies. Outside of health IT, standards are often used to allow products and devices to work together. For example, you probably have a number of devices that use Bluetooth technology to connect together, like your smartphone, a fitness tracker, printers, or even your car. These devices are all able to connect to each other because they use a set of standardized Bluetooth profiles that tell the devices how to connect. Another example is ATMs. When ATMs were first introduced, you could only use the ATM at the bank that issued your card. Over time, the manufacturers of ATMs agreed to a set of standards that would allow you to use any ATM in the world, regardless of which bank issued your card.</p>
+
+				<p>There are a range of standards that cover everything from how data is coded to how it is shared, including but not limited to:</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--
+
+<div class="section-header highlight" id="slider-block">
+	<div class="content">
+		<div class="slide-wrap">
+			<div class="standards-slides-container">
+
+				<div class="slide" id="slide2" aria-hidden="false">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.base_url}}/assets/img/vocabicon.png" alt=""></span>
+							<p><b>Vocabulary/Terminology standards: </b>Vocabulary standards are all about how individual data elements are structured, recorded, and transmitted.  For example, when a provider adds a problem to a patient’s chart in your EHR system, the system will automatically link that problem to either an ICD-10 code or a SNOMED-CT code. Likewise, when a provider orders a medication for a patient, the system will automatically link the medication to an RxNorm code that will be electronically transmitted to the pharmacy, so that they fill the prescription with the right medication. Note that vendors have done this by mapping codes on the back-end of the system.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" id="slide3" aria-hidden="true">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.base_url}}/assets/img/formaticon.png" alt=""></span>
+							<p><b>Format standards: </b>Rarely is a single clinical data element for a patient shared electronically with another system, meaning, that typically a summary of clinical information (including medications, problems, allergies, lab results, etc.) is shared, rather than just one element like medication. When a health IT system receives this summary information, it has to be able to interpret it, which requires knowing what data will be in what locations, and what vocabulary the data will use. This is done via format standards, like the C-CDA (a standard summary of care document used for transitions of care) that layout for a developer where data is at in the document and the vocabulary for each data element.</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="slide" id="slide4" aria-hidden="true">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.base_url}}/assets/img/transporticon.png" alt=""></span>
+							<p><b>Transport standards: </b>Transport standards are how the data gets from point A to point B. We use transport standards every day in the non-clinical world when we send emails. Prior to the adoption of SMTP standards, individuals with a Yahoo email address could not share emails with someone with a Hotmail address. Transport standards allow for the secure exchange of data across the internet, but each product has to follow the same transport standard or exchange will not occur. While some transport standards, like Direct are very basic and similar to email, other transport standards allow for more complex data connectivity to share a broader set of data, or APIs, like, FHIR that will allow users to query for a single data element.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide-nav" >
+				<ul class="slide-location">
+					
+					<li><a href="" data-slide='1'>1</a></li>
+					<li><a href="" data-slide='2'>2</a></li>
+					<li><a href="" data-slide='3'>3</a></li>
+				</ul>
+
+				<a class="btn btn-previous" href="{{site.baseurl}}/chapter-1"><span aria-hidden="true">&larr;</span> Previous</a>
+				<a class="btn btn-next" href="{{site.baseurl}}/chapter-1">Next <span aria-hidden="true">&rarr;</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+-->
+
+
+
+
+<div class="section-header" id-"slider-block">
+	<div class="content">
+		<div class="slide-wrap">
+			<div class="standards-slides-container">
+
+				<div class="slide" id="slide2" aria-hidden="false">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.github.url}}/assets/img/vocabicon.png" alt=""></span>
+							<p><b>Vocabulary/Terminology standards: </b>Vocabulary standards are all about how individual data elements are structured, recorded, and transmitted.  For example, when a provider adds a problem to a patient’s chart in your EHR system, the system will automatically link that problem to either an ICD-10 code or a SNOMED-CT code. Likewise, when a provider orders a medication for a patient, the system will automatically link the medication to an RxNorm code that will be electronically transmitted to the pharmacy, so that they fill the prescription with the right medication. Note that vendors have done this by mapping codes on the back-end of the system.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" id="slide3" aria-hidden="true">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.github.url}}/assets/img/formaticon.png" alt=""></span>
+							<p><b>Format standards: </b>Rarely is a single clinical data element for a patient shared electronically with another system, meaning, that typically a summary of clinical information (including medications, problems, allergies, lab results, etc.) is shared, rather than just one element like medication. When a health IT system receives this summary information, it has to be able to interpret it, which requires knowing what data will be in what locations, and what vocabulary the data will use. This is done via format standards, like the C-CDA (a standard summary of care document used for transitions of care) that layout for a developer where data is at in the document and the vocabulary for each data element.</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="slide" id="slide4" aria-hidden="true">
+					<div class="row">
+						<div class="grid-12">
+							<span><img class="slide-icon" src="{{site.github.url}}/assets/img/transporticon.png" alt=""></span>
+							<p><b>Transport standards: </b>Transport standards are how the data gets from point A to point B. We use transport standards every day in the non-clinical world when we send emails. Prior to the adoption of SMTP standards, individuals with a Yahoo email address could not share emails with someone with a Hotmail address. Transport standards allow for the secure exchange of data across the internet, but each product has to follow the same transport standard or exchange will not occur. While some transport standards, like Direct are very basic and similar to email, other transport standards allow for more complex data connectivity to share a broader set of data, or APIs, like, FHIR that will allow users to query for a single data element.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide-nav" >
+				<ul class="slide-location">
+					<li><a href="" data-slide='1'>1</a></li>
+					<li><a href="" data-slide='2'>2</a></li>
+					<li><a href="" data-slide='3'>3</a></li>
+				</ul>
+
+				<a class="btn btn-previous" href="{{site.baseurl}}/chapter-1"><span aria-hidden="true">&larr;</span> Previous</a>
+				<a class="btn btn-next" href="{{site.baseurl}}/chapter-1">Next <span aria-hidden="true">&rarr;</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="section-header" id="section1.1" name="section1.1">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+				<h2><span class="section-number">1.1</span>{{ page.subnav[0].section-title }}</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section-header">
+	<div class="content">
+		<div class="row">
+			<div class="grid-12">
+			
+				<p>While standards make it significantly easier to exchange data across health IT systems, they can’t fix all of the issues with exchanging data. Standards are intended to support a broad number of use cases, often across multiple countries. While standards are intended to address specific business needs, they are also intended to meet the broadest set of needs with a single standard. So sometimes standards allow variation that can make it harder to exchange data for a particular use case or within a particular country whose health system operates differently than other nations. In order to narrow down the use case for a particular standard, SDOs will create an implementation guide or specification that helps guide health IT developers in how they implement the standard for a small set of use cases. Again, because multiple use cases are met with a single guide/specification, there is still allowed variation. For example, the guide/specification may suggest that a developer use a vocabulary for a particular data type, like a procedure, but it may not require that they use a vocabulary code because they want to allow for optionality to support a broader number of use cases. This type of variation can sometimes make it hard to exchange data, despite the use of standards.</p>
+
+				<p>Additionally, standards merely “standardize” the data that has been put into the system. There’s a common saying, “garbage in, garbage out.” So, if data quality is poor, i.e. data is not being recorded, it’s not being coded to the right vocabulary, etc., standards won’t do much to help with the exchange of the data, or help receiving systems be able to interpret the data. Finally, there can be disagreement amongst clinicians on how data should be mapped to the vocabularies, this is considered semantic variation. For example, ICD-10 has 10 codes for endocrine, nutritional and metabolic diseases. Some organizations may use all 10 codes, while others only use a few. And if the EHR system wasn’t using vocabularies before, organizations may make different decisions on how to map those codes, potentially causing issues if another organization uses a different set of codes.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+{% include upper-footer.html %}
+
