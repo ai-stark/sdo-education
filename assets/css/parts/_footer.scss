@@ -7,6 +7,7 @@
 			color: $black;
 			font-size: .8em;
 			margin-right: 1em;
+			display: block;
 		}
 	}
 	.footer-logos{
@@ -26,6 +27,9 @@
 }
 
 @include breakpoint($large){
+	.footer .footer-links a{
+		display: inline; 
+	}
 	.footer .footer-logos{
 		clear: none;
 		float: right;
@@ -40,28 +44,22 @@
 	margin: 3em 0;
 	.btn-chapter{
 		font-size: 1.4em;
-		padding: .75em 1.5em;
+		padding: .75em .75em;
 	}
 }
 
-.btn-chapter{
-	background-color: $blue;
-	border: 1px solid $blue;
-	color: #FFF;
+
+@include breakpoint($medium){
+.next{
+	margin: 3em 0;
+	.btn-chapter{
+		font-size: 1.4em;
+		padding: .75em 1.5em;
+	}
+}	
 }
 
 
-.btn-chapter:hover{
-	background-color: #FFF;
-	border: 1px solid $blue;
-	color: $blue;
-}
-
-.btn-chapter:focus {
-    background-color: #fff;
-    border-color: $blue;
-    color: $blue;
-}
 
 .panel{
 	background-color: $off-white;
@@ -117,8 +115,12 @@
 	}
 }
 
+
+
 .sharing-footer .social{
 	background-color: #fff;
+	position: static;
+	padding-left: 0em;
 	.print-btn{
 		background-image: url('../../assets/img/icon-print-black.png');
 		color: black;
@@ -130,3 +132,4 @@
 		border: 2px solid $black;
 	}
 }
+

@@ -32,8 +32,14 @@
 	background-color: rgba(50, 50, 50, 0.8);
 	color: #FFFFFF;
 	padding: 1em 0 1em 1.5em;
-	margin-left: 2.5em;
 }
+
+@include breakpoint($medium){
+	.chapter-title-wrap{
+		margin-left: 2.5em;
+	}
+}
+
 
 .chapter{
 	color: $yellow;
