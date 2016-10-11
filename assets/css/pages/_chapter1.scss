@@ -7,10 +7,7 @@
 
 @include breakpoint($medium-2){
 	.chapter1-billboard{
-		//background-image: url('/assets/img/chapter1.jpg');
 		background-position: 20% top;
-		//background-repeat: no-repeat;
-		//background-size: cover;
 	}
 }
 

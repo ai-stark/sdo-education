@@ -1,38 +1,35 @@
-
 <div class="nav" role="navigation">
-<ul class="page-nav">
-	{% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-	{% for p in navigation_pages %}
-	{% if p.navigation_weight %}
-		
-		
-		<li class="nav-group {% if p.subnav %}has-sub-nav{% endif %} {% if p.url == page.url %}current{% endif %}">
-			<a href="{{site.baseurl}}{{p.url}}">
-				<span class="section-title">{{p.title}}</span>
-				<span class="section-subtitle">{{p.subtitle}}</span>
-			</a>
+	<ul class="page-nav">
+		{% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+		{% for p in navigation_pages %}
+		{% if p.navigation_weight %}
+			
+			<li class="nav-group {% if p.subnav %}has-sub-nav{% endif %} {% if p.url == page.url %}current{% endif %}">
+				<a href="{{site.baseurl}}{{p.url}}">
+					<span class="section-title">{{p.title}}</span>
+					<span class="section-subtitle">{{p.subtitle}}</span>
+				</a>
 
-			{% if p.subnav %}
-				<a class="btn toggle-switch {% if p.url == page.url %}arrow-img-right{% else %}arrow-img-down{% endif %}" href=""></a>
-			{% endif %}
-		
-			<ul class="subnav {% if p.url == page.url %}subnav-expanded{% endif %}" aria-hidden="true">
-				{% for sub in p.subnav %}
-					<li>
-						<a href="#section{{sub.section-num}}">{{sub.section-num}} {{sub.section-title}}</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</li>
-	{% endif %}
-	{% endfor %}
-</ul>
+				{% if p.subnav %}
+					<a class="btn toggle-switch {% if p.url == page.url %}arrow-img-right{% else %}arrow-img-down{% endif %}" href=""></a>
+				{% endif %}
+			
+				<ul class="subnav {% if p.url == page.url %}subnav-expanded{% endif %}" aria-hidden="true">
+					{% for sub in p.subnav %}
+						<li>
+							<a href="#section{{sub.section-num}}">{{sub.section-num}} {{sub.section-title}}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
 
-<div class="nav-footer">
-	<a href="https://www.healthit.gov/">
-		<img src="{{site.baseurl}}/assets/img/healthIT-logo.png" alt="HealthIT logo">
-	</a>
-</div>
-
+	<div class="nav-footer">
+		<a href="https://www.healthit.gov/">
+			<img src="{{site.baseurl}}/assets/img/healthIT-logo.png" alt="HealthIT logo">
+		</a>
+	</div>
 
 </div>

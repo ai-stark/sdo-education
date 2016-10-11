@@ -1,6 +1,12 @@
 .chapter3-billboard{
 	background-image: url('../../assets/img/chapter3_alt.jpg');
-	background-position: 50% 60%;
+	background-position: 80% top;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@include breakpoint($medium-2){
+	.chapter3-billboard{
+		background-position: 50% 60%;
+	}
 }
