@@ -12,7 +12,7 @@
 				</a>
 
 				{% if p.subnav %}
-					<a class="btn toggle-switch {% if p.url == page.url %}arrow-img-right{% else %}arrow-img-down{% endif %}" href=""></a>
+					<a class="btn toggle-switch {% if p.url == page.url %}arrow-img-right{% else %}arrow-img-down{% endif %}" href="#subnav-{{page.slug}}"></a>
 				{% endif %}
 			
 				<ul class="subnav {% if p.url == page.url %}subnav-expanded{% endif %}" aria-hidden="true">
