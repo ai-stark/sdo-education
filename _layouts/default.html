@@ -7,11 +7,25 @@
 		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/print.css" media="print">
 		<script src="{{site.baseurl}}/assets/js/libs/modernizr/modernizr-custom.js"></script>
-
-		
 		<script src="https://use.typekit.net/nvj0nzb.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 		
+		{% if page.navigation_weight < 999 %}
+			<meta name="twitter:card" content="summary_large_image">
+  			<meta name="twitter:site" content="@ONC_HealthIT">
+  			<meta name="twitter:creator" content="@ONC_HealthIT">
+			<meta property="og:url" content="{{site.absolute}}{{page.slug}}" />
+			<meta property="og:title" content="{{page.subtitle}}" />
+			<meta property="og:description" content="{{page.description}}" />
+			<meta property="og:image" content="{{site.baseurl}}/assets/img/{{page.billboard-image}}" />
+		{% endif %}
+
+		<!--[if lt IE 9]>
+		<script src="/assets/js/libs/html5shiv/dist/html5shiv.min.js"></script>
+		<script src="/assets/js/libs/respond/dest/respond.min.js"></script>
+		<!--<![endif]-->
+
 	</head>
 	<body>
 		<a href="#top-of-page" class="skip">Skip to content</a>

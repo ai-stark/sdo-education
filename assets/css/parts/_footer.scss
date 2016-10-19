@@ -50,13 +50,13 @@
 
 
 @include breakpoint($medium){
-.next{
-	margin: 3em 0;
-	.btn-chapter{
-		font-size: 1.4em;
-		padding: .75em 1.5em;
-	}
-}	
+	.next{
+		margin: 3em 0;
+		.btn-chapter{
+			font-size: 1.4em;
+			padding: .75em 1.5em;
+		}
+	}	
 }
 
 

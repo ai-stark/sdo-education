@@ -1,5 +1,5 @@
 .chapter3-billboard{
-	background-image: url('../../assets/img/chapter3_alt.jpg');
+	background-image: url('../../assets/img/chapter3.jpg');
 	background-position: 80% top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -9,4 +9,13 @@
 	.chapter3-billboard{
 		background-position: 50% 60%;
 	}
+}
+
+.create{
+	margin-top: 3.5em;
+}
+
+.create .btn-chapter {
+	font-size: 1.4em;
+    padding: .75em 1.5em;
 }

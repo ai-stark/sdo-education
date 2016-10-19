@@ -3,6 +3,7 @@
 		{% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
 		{% for p in navigation_pages %}
 		{% if p.navigation_weight %}
+		
 			
 			<li class="nav-group {% if p.subnav %}has-sub-nav{% endif %} {% if p.url == page.url %}current{% endif %}">
 				<a href="{{site.baseurl}}{{p.url}}">
