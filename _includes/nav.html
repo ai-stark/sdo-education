@@ -15,7 +15,7 @@
 					<a class="btn toggle-switch {% if p.url == page.url %}arrow-img-right{% else %}arrow-img-down{% endif %}" href="#subnav-{{page.slug}}"></a>
 				{% endif %}
 			
-				<ul class="subnav {% if p.url == page.url %}subnav-expanded{% endif %}" aria-hidden="true">
+				<ul class="subnav {% if p.url == page.url %}subnav-expanded{% endif %}" aria-hidden="true" id="subnav-{{page.slug}}">
 					{% for sub in p.subnav %}
 						<li>
 							<a href="#section{{sub.section-num}}">{{sub.section-num}} {{sub.section-title}}</a>
