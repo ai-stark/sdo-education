@@ -1,23 +1,11 @@
-/* .header {
-    box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
-    position: fixed;
-    height: 9.5em;
-    left: 0;
-    top: 3em;
-    width: 20.5em;
-} */
-
 .header .site-name{
 	display: none;
 }
-
-
 
 @include breakpoint($large){
 	.header .site-name{
 		display: block;
 	}
-
 }
 
 .nav li{
@@ -53,21 +41,15 @@
 
 @include breakpoint($large){
 	.nav{
-		top: 9.5em;
+		top: 10.5em;
 	}
 }
-
-
-
-
-
 
 .sidebar{
 	width: 20.5em;
 	height: 100vh;
 	position: fixed;
 	background-color: #FFFFFF;
-	//box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
 	z-index: 30;
 	left: 0;
 	transition: left .15s ease;
@@ -94,9 +76,6 @@
 	}
 }
 
-
-
-
 .sidebar.closed{
 	left: -20.5em;
 	transition: left .15s ease;
@@ -115,7 +94,6 @@
 		box-shadow: 0.5em 0 1.5em rgba(50,50,50,0.15);
 	}
 }
-
 
 .search-bar-wrap{
 	background-color: #FFFFFF;
@@ -183,24 +161,25 @@
 	background-image: url('../../assets/img/icon-arrow-green-down.png');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: .8em;	
+	background-size: .8em;
+	text-indent: -9999px;
 }
 
 .arrow-img-up{
 	background-image: url('../../assets/img/icon-arrow-green-up.png');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: .8em;	
+	background-size: .8em;
+	text-indent: -9999px;	
 }
 
 .arrow-img-right{
 	background-image: url('../../assets/img/icon-arrow-green-right.png');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: .8em;	
+	background-size: .8em;
+	text-indent: -9999px;	
 }
-
-
 
 .nav .toggle-switch{
 	width: 1.5em;

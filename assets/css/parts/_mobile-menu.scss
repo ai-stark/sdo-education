@@ -27,6 +27,24 @@
 	}
 }
 
+.btn-chapter{
+	background-color: $blue;
+	border: 1px solid $blue;
+	color: #FFF;
+}
+
+.btn-chapter:hover{
+	background-color: #FFF;
+	border: 1px solid $blue;
+	color: $blue;
+}
+
+.btn-chapter:focus {
+    background-color: #fff;
+    border-color: $blue;
+    color: $blue;
+}
+
 .btn-touch{
 	background-color: #FFF;
 	border-color: $blue;
@@ -35,6 +53,10 @@
 	padding-right: 1em;
 	padding: .4em .75em;
 	vertical-align: middle;
-
 }
 
+.btn-touch:hover{
+	background-color: #FFF;
+	border-color: $blue;
+	color: $blue;
+}

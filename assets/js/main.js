@@ -59,6 +59,9 @@ $(window).on('load', function(){
 	});
 
 cycleSlider();
+
+
+
 	
 });
 
@@ -139,3 +142,8 @@ $('.slide-location a').click(function(event){
 });
 
 
+function submitSearch(){
+    q = document.getElementById("query").value;
+    document.getElementById("siteSearchUrl").value='https://search.usa.gov/search/docs&q=' + q; 
+    return true;
+}

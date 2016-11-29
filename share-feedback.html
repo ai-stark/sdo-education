@@ -3,9 +3,11 @@ layout: page
 url: share-your-feedback
 title: Share your feedback
 slug: share_feedback
+description: 
 billboardClass: feedback-billboard
+billboard-image: bg-feedback.jpg
 
-navigation_weight: 7
+navigation_weight: 9999
 ---
 
 {% include billboard_title_only.html %}
@@ -24,7 +26,8 @@ navigation_weight: 7
 			    <!-- add emails to cc these requests -->
 			    <input type="hidden" value="_cc" value="">
 			    <!-- used to fool scrapers and avoid spam -->
-			    <input type="text" name="_gotcha" style="display:none" />
+			    <input type="text" name="_gotcha" style="display:none" id="gotcha" />
+				<label for="gotcha" style="display:none">Gotcha</label>
 			    <p>
 			    	<label for="name">Name:</label>
 			    	<br>
@@ -39,9 +42,10 @@ navigation_weight: 7
 			    <p>
 			    	<label for="comment">Comment:</label>
 			    	<br>
-			    	<textarea name="comment" id="comment" rows="6" spellcheck="true"></textarea>
+			    	<textarea name="comment" id="comment" rows="6" spellcheck="true" aria-multiline="true"></textarea>
 			    </p>
 			</form>
+			
 		</div>
 	</div>
 </div>

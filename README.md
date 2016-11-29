@@ -1,1 +1,1 @@
-This is the website for the registrar playbook
+This is the website for the SDO Education Playbook

@@ -2,54 +2,40 @@
 layout: default
 ---
 
-<!--
-	<header>
-		{% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-		{% for p in navigation_pages %}
-		{% if p.navigation_weight %}
-			<li>
-				<a href="{{p.url}}" {% if p.url == page.url %} class="current" {% endif %}>
-					{{p.title}}
+<div class="wrapper">
+	<div class="sidebar closed">
+		<div class="header">
+			<div class="site-name">
+				<a href="https://www.healthit.gov">
+					<img src="{{site.baseurl}}/assets/img/ONC_Logo_high_resolution.png" alt="ONC logo">
 				</a>
-			</li>
-		{% endif %}
-		{% endfor %}
-		
-	</header>
--->
-
-
-	<div class="wrapper">
-		<div class="sidebar closed">
-			<div class="header">
-				<div class="site-name">
-					<a href="{{site.baseurl}}/">
-						<img src="http://placehold.it/265x73">
-					</a>
-				</div>
-				<form class="search" role="search" accept-charset="utf-8" method="get" action="https://search.usa.gov/search/docs">
-					<label for="query" class="search-label">Search</label>
-					<div class="search-bar-wrap">
-						<input class="search-query" type="text" id="query" name="search">
-						<button class="search-button" type="submit">
-							<img src="{{site.baseurl}}/assets/img/icon-search-white.png" alt="Search">
-						</button>
-					</div>
-
-				</form>
 			</div>
+			<form class="search" role="search" accept-charset="utf-8" method="get" action="https://search.usa.gov/search/docs">
+				<label for="query" class="search-label">Search</label>
+				<div class="search-bar-wrap">
+					<input type="hidden" name="dc" value="3622">
+					<input type="hidden" name="utf8" value="&#x2713;">
+					<input type="hidden" name="affiliate" value="">
+					<input autocomplete="off" class="search-query" type="text" id="query" name="search" role="textbox" >
+					<button class="search-button" type="submit">
+						<img src="{{site.baseurl}}/assets/img/icon-search-white.png" alt="Search">
+					</button>
+				</div>
+			</form>
 			
-			{% include nav.html %}
-
 		</div>
-		<div class="main page-content" id="top-of-page" >
-			<div class="overlay"></div>
+		
+		{% include nav.html %}
 
-			{{ content }}
-
-
-
-			{% include footer.html %}
-			
-		</div>
 	</div>
+	<div class="main page-content" id="top-of-page" >
+		<div class="overlay"></div>
+
+		{{ content }}
+
+
+
+		{% include footer.html %}
+		
+	</div>
+</div>

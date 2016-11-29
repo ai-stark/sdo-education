@@ -1,8 +1,12 @@
-
 <div class="social">
-	<a href="" class="social-btn facebook-btn"></a>
-	<a href="" class="social-btn linked-in-btn"></a>
-	<a href="" class="social-btn twitter-btn"></a>
+
+	<a href="https://www.facebook.com/sharer/sharer.php?u={{site.absolute}}{{page.slug}}" class="social-btn facebook-btn" target="_blank" rel="noopener noreferrer" aria-label="Share this page on Facebook"></a>
+
+	<a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.absolute}}{{page.slug}}&title={{page.description | url_encode }}" class="social-btn linked-in-btn" target="_blank" rel="noopener noreferrer" aria-label="Share this page on LinkedIn"></a>
+
+	<a href="https://twitter.com/intent/tweet?text={{page.twitter | url_encode }}%20{{site.absolute}}{{page.slug}}%20via%20@ONC_HealthIT" class="social-btn twitter-btn" target="_blank" rel="noopener noreferrer" aria-label="Share this page on Twitter"></a>
 
 	<a href="javascript:window.print()" class="print-btn">Print</a>
+	
 </div>
+

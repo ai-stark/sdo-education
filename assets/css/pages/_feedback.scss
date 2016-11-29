@@ -1,8 +1,14 @@
 .feedback-billboard{
-	background-image: url('https://placehold.it/1400x700');
-	background-position: top center;
+	background-image: url('../../assets/img/bg-feedback.jpg');
+	background-position: 98% top;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@include breakpoint($medium-2){
+	.feedback-billboard{
+		background-position: center center;
+	}	
 }
 
 .feedback-form p input,

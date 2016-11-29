@@ -1,19 +1,94 @@
 ---
 
 ---
+@import "base/-base-index";
 
-.search{
-	display: none;;
-}
 
-.nav{
+.skip, .search, .nav, .social, .mobile-menu{
 	display: none;
 }
 
-.social{
+.sidebar .site-name img{
+	margin: 0 0 .5cm 0;
+	width: 250px;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    margin: 1cm .5cm .5cm .8cm;
+    line-height: 1.7em;
+    font-size: 110%;
+}
+
+body p{
+	margin-bottom: 1.5em;
+}
+
+.chapter-title-wrap .chapter{
+	font-size: 1.3em;
+	margin: 0;
+	margin: 2em 0 .3em 0;
+}
+
+.chapter-title-wrap .chapter-head{
+	margin: 0;
+	border-bottom: 2px solid $gray;
+	padding-bottom: .5em;
+	margin-bottom: 1.2em;
+}
+
+.upper-footer, .footer{
 	display: none;
 }
 
+.section ul{
+	margin: .25em 0 .75em 2.25em;
+}
+
+.section ul li{
+	list-style-type: disc;
+}
+
+.section-header h2{
+	margin-bottom: .25em;
+	margin-top: 1.75em;
+	font-size: 2em;
+}
+
+.section-number{
+	border: 1px solid $black;
+	border-radius: 3em;
+	display: block;
+	float: left;
+	font-size: .8em;
+	height: 2.25em;
+	width: 2.25em;
+	text-align: center;
+	padding: .35em .5em;
+	margin-right: .5em;
+	margin-top: -.25em;
+}
+
+.slide-icon{
+	width: 10em;
+	float: left;
+	margin: 0 .25em 0 0;
+}
 
 
+#slide4{
+	margin-top: 150px;
+}
 
+.slide-nav{
+	display: none;
+}
+
+@media print{
+    a:after{
+       content:" (" attr(href) ") ";
+       font-size:0.8em;
+       font-weight:normal;
+   }
+}
