@@ -60,19 +60,24 @@
 
 .slide{
 	display: inline;
-	min-height: 20em;
+	min-height: 30em;
 	background-color: $blue-dark;
 	color: #fff;
 	padding: .5em;
 	p{
-		font-size: 1.125em;
-		line-height: 1.5em;
+		font-size: 1em;
+		line-height: 1.25em;
 	}	
 }
 
 @include breakpoint($medium){
 	.slide{
+		min-height: 25em;
 		padding: 1em;
+		p{
+			font-size: 1.125em;
+			line-height: 1.5em;
+		}
 	}
 }
 
