@@ -1,4 +1,4 @@
-baseurl: /sdo_education
+baseurl: /sdo-education
 
 
 
@@ -9,4 +9,4 @@ sass:
 
 permalink: pretty
 
-absolute: https://www.healthit.gov/sdo_education/
+absolute: https://www.healthit.gov/sdo-education/
