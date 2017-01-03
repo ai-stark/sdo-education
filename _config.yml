@@ -1,5 +1,5 @@
-baseurl: /playbook/sdo-education
-
+#baseurl: /playbook/sdo-education
+baseurl: /sdo-education
 
 
 exclude: ['README.md']
@@ -9,4 +9,5 @@ sass:
 
 permalink: pretty
 
-absolute: https://www.healthit.gov/playbook/sdo-education/
+#absolute: https://www.healthit.gov/playbook/sdo-education/
+absolute: https://www.healthit.gov/sdo-education/
